@@ -25,7 +25,17 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": "container"
+								},
+								{
+									"name": "folder"
+								},
+								{
+									"name": "file"
+								}
+							],
 							"typeProperties": {
 								"source": {
 									"type": "JsonSource",
@@ -187,7 +197,10 @@
 														"value": "@{item().table}",
 														"type": "Expression"
 													},
-													"file": "@concat(item().table,'_',variables('new'))"
+													"file": {
+														"value": "@concat(item().table,'_',variables('current'))",
+														"type": "Expression"
+													}
 												}
 											},
 											"enableLogging": false,
