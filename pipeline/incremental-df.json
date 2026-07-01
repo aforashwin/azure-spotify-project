@@ -247,7 +247,17 @@
 											"secureOutput": false,
 											"secureInput": false
 										},
-										"userProperties": [],
+										"userProperties": [
+											{
+												"name": "container"
+											},
+											{
+												"name": "folder"
+											},
+											{
+												"name": "file"
+											}
+										],
 										"typeProperties": {
 											"source": {
 												"type": "JsonSource",
