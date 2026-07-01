@@ -343,7 +343,7 @@
 					"method": "POST",
 					"url": "https://prod-09.uksouth.logic.azure.com:443/workflows/adcf70db4acf4145bfc1a647b178e4a2/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=6E_BJnPevJY3xYeiGwKRcj_64HQyJ_XIop1noD_x83Y",
 					"body": {
-						"value": "{\n    \"pipeline_name\":\"@{pipeline().Pipeline}\"\",\n    \"pipeline_runid\":\"@{pipeline().RunId}\"\n}",
+						"value": "{\n    \"pipeline_name\":\"@{pipeline().Pipeline}\",\n    \"pipeline_runid\":\"@{pipeline().RunId}\"\n}",
 						"type": "Expression"
 					}
 				}
