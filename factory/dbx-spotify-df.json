@@ -1,0 +1,15 @@
+{
+	"name": "dbx-spotify-df",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b4ed44df-f9c6-4275-b431-6cff26344b8b",
+		"tenantId": "ace4e35f-8484-4ca2-a71f-f55a764ea283"
+	}
+}
