@@ -11,3 +11,5 @@ End-to-end Azure Data Engineering project using Azure Data Factory, Azure SQL Da
 ## 👨‍💻 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ashwin%20R-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashwin-r-b540243aa/)
+
+[![Email](https://img.shields.io/badge/Email-ashwinbalaji454560%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ashwinbalaji454560@gmail.com)
