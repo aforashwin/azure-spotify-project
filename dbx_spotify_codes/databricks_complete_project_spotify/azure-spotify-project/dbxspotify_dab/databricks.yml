@@ -1,0 +1,33 @@
+bundle:
+  name: dbxspotify_dab
+  uuid: 98b4acf4-606f-486b-8809-e0ba9c4ecbac
+
+variables:
+  catalog:
+    description: Unity Catalog name
+  schema:
+    description: Schema name
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://adb-7405606792109138.18.azuredatabricks.net
+    presets:
+      source_linked_deployment: false
+    variables:
+      catalog: main
+      schema: ${workspace.current_user.short_name}
+
+  prod:
+    mode: production
+    workspace:
+      host: https://adb-7405606792109138.18.azuredatabricks.net
+      root_path: /Workspace/Users/kraja199@gmail.com/azure-spotify-project/dbxspotify_dab/PROD/.bundle/${bundle.name}/${bundle.target}
+    variables:
+      catalog: main
+      schema: prod
+    permissions:
+      - user_name: kraja199@gmail.com
+        level: CAN_MANAGE
